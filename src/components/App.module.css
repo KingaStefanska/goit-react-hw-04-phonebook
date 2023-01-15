@@ -1,0 +1,20 @@
+.container {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.filter_container {
+  display: flex;
+  flex-direction: column;
+}
+
+.list_container {
+  font-size: 20px;
+}
+
+ul {
+  list-style: none;
+}

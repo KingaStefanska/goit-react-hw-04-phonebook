@@ -1,0 +1,8 @@
+.filterInput {
+  display: flex;
+  flex-direction: row;
+  margin-left: 10px;
+  width: 420px;
+  height: 40px;
+  border-radius: 5px;
+}
