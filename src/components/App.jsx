@@ -16,11 +16,11 @@ const App = () => {
       { id: 'id-4', name: 'Annie Copeland', number: '227-91-26' },
     ]
   );
+  const [filter, setFilter] = useState('');
+
   useEffect(() => {
     localStorage.setItem('contacts', JSON.stringify(contacts));
   }, [contacts]);
-
-  const [filter, setFilter] = useState('');
 
   const add = ({ name, number }) => {
     const toLowerCase = name.toLowerCase();
