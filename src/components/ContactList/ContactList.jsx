@@ -20,11 +20,15 @@ const ContactList = ({ contacts, toDelete }) => (
   </ul>
 );
 
-ContactList.propTypes = {
-  id: PropTypes.number.isRequired,
-  name: PropTypes.string.isRequired,
-  number: PropTypes.number.isRequired,
-  toDelete: PropTypes.func.isRequired,
+ContactList.prototype = {
+  onDelete: PropTypes.func.isRequired,
+  contacts: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      name: PropTypes.string.isRequired,
+      number: PropTypes.number.isRequired,
+    })
+  ),
 };
 
 export default ContactList;
